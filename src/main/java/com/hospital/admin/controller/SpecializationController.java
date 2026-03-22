@@ -22,4 +22,11 @@ public class SpecializationController {
     public Specialization addSpecialization(@RequestBody Specialization specialization) {
         return service.saveSpecialization(specialization);
     }
+
+    @DeleteMapping("/specialization/{id}")
+    public String deleteSpecialization(@PathVariable Long id) {
+        service.deleteSpecialization(id);
+        return "Specialization deleted successfully";
+    }
+
 }
