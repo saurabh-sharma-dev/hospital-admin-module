@@ -3,7 +3,7 @@ package com.hospital.admin.entity;
 import jakarta.persistence.*;
 
 @Entity
-public class Specialization {
+public class Room {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
